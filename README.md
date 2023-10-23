@@ -3,5 +3,5 @@ Assignment 3 for ICTWEB519 - Website
 
 ## Timelog
 
-### 24 October
+### 24 September
 Started Assignment 3
