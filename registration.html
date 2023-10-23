@@ -31,29 +31,39 @@
           <label for="email">Email Address:</label>
           <input type="email" name="email" class="create-form-input" />
           <!-- Gender -->
-          <label for="first-name">Gender:</label>
-          <input type="radio" name="first_name" class="create-form-input" />
+          <label for="Gender">Gender:</label>
+          <input type="radio" id="male" name="gender" />
+          <label for="male">Male</label><br />
+
+          <input type="radio" id="female" name="gender" />
+          <label for="female">Female</label><br />
+
+          <input type="radio" id="other" name="gender" />
+          <label for="other">Other</label>
 
           <!-- Select Club -->
           <label for="club">Select Club:</label>
           <select name="club" id="select-club-input">
-            <option value="Club 1"></option>
-            <option value="Club 2"></option>
-            <option value="Club 3"></option>
-            <option value="Club 4"></option>
-            <option value="Club 5"></option>
+            <option value="" default>Select Club</option>
+            <option value="Club 1">Ashgrove</option>
+            <option value="Club 2">Brisbane City</option>
+            <option value="Club 3">Chermside</option>
+            <option value="Club 4">Graceville</option>
+            <option value="Club 5">Westlake</option>
           </select>
 
           <!-- Fitness Level -->
           <label for="fitness-level">Fitness Level:</label>
           <select name="fitness_level" id="fitness-level-input">
-            <option value="Beginner"></option>
-            <option value="Intermediate"></option>
-            <option value="Professional"></option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Professional">Professional</option>
           </select>
           <article class="btn-container">
-            <input type="text" value="Back to Home" />
-            <input type="submit" value="Join Now" />
+            <button class="button-primary button">Back</button>
+            <button type="submit" class="button-secondary button">
+              Join Now
+            </button>
           </article>
         </form>
       </section>
