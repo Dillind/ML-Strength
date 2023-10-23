@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ML Strength - Registration</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header/nav -->
+    <menu-container class="header-container"></menu-container>
+    <main>
+      <section class="registration-section">
+        <h1>Sign Up</h1>
+        <form action="register" method="post" class="create-form">
+          <h3>Enter your details below</h3>
+
+          <!-- First Name -->
+          <label for="first-name">First Name:</label>
+          <input type="text" name="first_name" class="create-form-input" />
+
+          <!-- Last Name -->
+          <label for="last-name">Last Name:</label>
+          <input type="text" name="last_name" class="create-form-input" />
+
+          <!-- Phone Number -->
+          <label for="phone">Phone Number:</label>
+          <input type="tel" name="phone" class="create-form-input" />
+
+          <!-- Email Address -->
+          <label for="email">Email Address:</label>
+          <input type="email" name="email" class="create-form-input" />
+          <!-- Gender -->
+          <label for="first-name">Gender:</label>
+          <input type="radio" name="first_name" class="create-form-input" />
+
+          <!-- Select Club -->
+          <label for="club">Select Club:</label>
+          <select name="club" id="select-club-input">
+            <option value="Club 1"></option>
+            <option value="Club 2"></option>
+            <option value="Club 3"></option>
+            <option value="Club 4"></option>
+            <option value="Club 5"></option>
+          </select>
+
+          <!-- Fitness Level -->
+          <label for="fitness-level">Fitness Level:</label>
+          <select name="fitness_level" id="fitness-level-input">
+            <option value="Beginner"></option>
+            <option value="Intermediate"></option>
+            <option value="Professional"></option>
+          </select>
+          <article class="btn-container">
+            <input type="text" value="Back to Home" />
+            <input type="submit" value="Join Now" />
+          </article>
+        </form>
+      </section>
+    </main>
+    <!-- Footer -->
+    <menu-container class="footer-container"></menu-container>
+
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
