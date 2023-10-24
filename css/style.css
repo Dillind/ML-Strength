@@ -208,11 +208,11 @@ header {
   gap: 20px;
 }
 
-.btn-container a {
+.btn-container > a {
   text-decoration: none;
 }
 
-.btn-container a {
+.btn-container > a {
   text-transform: uppercase;
 }
 
@@ -268,7 +268,7 @@ header {
   font-size: 20px;
 }
 
-.card-content-title a {
+.card-content-title > a {
   text-decoration: none;
   color: var(--white);
 }
@@ -324,18 +324,6 @@ header {
 }
 
 .about-card-content p {
-  margin-top: 10px;
-}
-.about-card-content-quote {
-  text-align: center;
-}
-
-.about-card-content-quote > blockquote > p {
-  font-size: 30px;
-  margin-top: 20px;
-}
-
-.about-card-content-quote > figcaption {
   margin-top: 10px;
 }
 
@@ -411,6 +399,38 @@ header {
 }
 
 /* REGISTRATION CSS */
+
+.create-form {
+  margin-top: 30px;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.create-form-input {
+  width: 100%;
+  min-width: 150px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #dddddd;
+  background: var(--white);
+  outline: none;
+  transition: border-color 0.5s;
+}
+
+.create-form-input:focus {
+  border-color: var(--primary-color);
+}
 
 /* FOOTER CSS */
 
