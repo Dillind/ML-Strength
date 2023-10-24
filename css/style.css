@@ -208,15 +208,19 @@ header {
   gap: 20px;
 }
 
-.btn-container > button {
+.btn-container a {
+  text-decoration: none;
+}
+
+.btn-container a {
   text-transform: uppercase;
 }
 
-.btn-container > button:nth-child(1) {
+.btn-container > a:nth-child(1) {
   box-shadow: 0px 0px 10px 0px var(--primary-color);
 }
 
-.btn-container > button:nth-child(2) {
+.btn-container > a:nth-child(2) {
   box-shadow: 0px 0px 10px 0px var(--black);
 }
 
