@@ -59,11 +59,13 @@ main {
 .button-primary {
   background-color: var(--primary-color);
   color: var(--white);
+  box-shadow: 0px 0px 10px 0px var(--primary-color);
 }
 
 .button-secondary {
   background-color: var(--black);
   color: var(--white);
+  box-shadow: 0px 0px 10px 0px var(--black);
 }
 /* HEADER CSS */
 
