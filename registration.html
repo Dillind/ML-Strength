@@ -11,61 +11,133 @@
     <menu-container class="header-container"></menu-container>
     <main>
       <section class="registration-section">
-        <h1>Sign Up</h1>
-        <form action="register" method="post" class="create-form">
-          <h3>Enter your details below</h3>
-
-          <!-- First Name -->
-          <label for="first-name">First Name:</label>
-          <input type="text" name="first_name" class="create-form-input" />
-
-          <!-- Last Name -->
-          <label for="last-name">Last Name:</label>
-          <input type="text" name="last_name" class="create-form-input" />
-
-          <!-- Phone Number -->
-          <label for="phone">Phone Number:</label>
-          <input type="tel" name="phone" class="create-form-input" />
-
-          <!-- Email Address -->
-          <label for="email">Email Address:</label>
-          <input type="email" name="email" class="create-form-input" />
-          <!-- Gender -->
-          <label for="Gender">Gender:</label>
-          <input type="radio" id="male" name="gender" />
-          <label for="male">Male</label><br />
-
-          <input type="radio" id="female" name="gender" />
-          <label for="female">Female</label><br />
-
-          <input type="radio" id="other" name="gender" />
-          <label for="other">Other</label>
-
-          <!-- Select Club -->
-          <label for="club">Select Club:</label>
-          <select name="club" id="select-club-input">
-            <option value="" default>Select Club</option>
-            <option value="Club 1">Ashgrove</option>
-            <option value="Club 2">Brisbane City</option>
-            <option value="Club 3">Chermside</option>
-            <option value="Club 4">Graceville</option>
-            <option value="Club 5">Westlake</option>
-          </select>
-
-          <!-- Fitness Level -->
-          <label for="fitness-level">Fitness Level:</label>
-          <select name="fitness_level" id="fitness-level-input">
-            <option value="Beginner">Beginner</option>
-            <option value="Intermediate">Intermediate</option>
-            <option value="Professional">Professional</option>
-          </select>
-          <article class="btn-container">
-            <button class="button-primary button">Back</button>
-            <button type="submit" class="button-secondary button">
-              Join Now
-            </button>
-          </article>
-        </form>
+        <h1 class="section-title">Sign Up</h1>
+        <article class="form-container">
+          <form action="#" method="post" class="create-form">
+            <article class="form-content">
+              <h3>Enter your details below</h3>
+              <!-- First Name -->
+              <label for="first-name">First Name:</label>
+              <input
+                type="text"
+                name="first_name"
+                class="create-form-input"
+                placeholder="Enter first name"
+                pattern="^[A-Z]{1}[A-Za-z \-']+$"
+                required
+              />
+              <span class="error-message">Please enter your first name</span>
+              <!-- Last Name -->
+              <label for="last-name">Last Name:</label>
+              <input
+                type="text"
+                name="last_name"
+                class="create-form-input"
+                placeholder="Enter last name"
+                pattern="^[A-Z]{1}[A-Za-z \-']+$"
+                required
+              />
+              <span class="error-message">Please enter your last name</span>
+              <!-- Phone Number -->
+              <label for="phone">Phone Number:</label>
+              <input
+                type="tel"
+                name="phone"
+                class="create-form-input"
+                placeholder="Enter phone number"
+                pattern="^(\+?\(61\)|\(\+?61\)|\+?61|\(0[1-9]\)|0[1-9])?( ?-?[0-9]){7,9}$"
+                maxlength="10"
+                required
+              />
+              <span class="error-message"
+                >Please enter a valid Australian phone number</span
+              >
+              <!-- Email Address -->
+              <label for="email">Email Address:</label>
+              <input
+                type="email"
+                name="email"
+                class="create-form-input"
+                placeholder="Enter email address"
+                pattern="^\S{1,}@\S{1,}[.]\S{1,}$"
+                required
+              />
+              <span class="error-message"
+                >Please enter a valid email address</span
+              >
+              <!-- Gender -->
+              <article class="create-form-gender">
+                <label for="gender">Gender:</label>
+                <!-- Male -->
+                <div class="radio-input">
+                  <input type="radio" id="male" name="gender" value="male" />
+                  <label for="male">Male</label>
+                </div>
+                <!-- Female -->
+                <div class="radio-input">
+                  <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="female"
+                  />
+                  <label for="female">Female</label>
+                </div>
+                <!-- Other -->
+                <div class="radio-input">
+                  <input type="radio" id="other" name="gender" value="other" />
+                  <label for="other">Other</label>
+                </div>
+                <!-- Prefer not to say -->
+                <div class="radio-input">
+                  <input
+                    type="radio"
+                    id="prefer-not-to-say"
+                    name="gender"
+                    value="prefer not to say"
+                  />
+                  <label for="other">Prefer not to say</label>
+                </div>
+                <span class="error-message">Please select an option</span>
+              </article>
+              <!-- Select Club -->
+              <label for="club">Select Club:</label>
+              <select name="club" class="select-input">
+                <option value="level" default>Select Club</option>
+                <option value="ashgrove">Ashgrove</option>
+                <option value="brisbane city">Brisbane City</option>
+                <option value="chermside">Chermside</option>
+                <option value="graceville">Graceville</option>
+                <option value="westlake">Westlake</option>
+              </select>
+              <span class="error-message">Please select a club</span>
+              <!-- Fitness Level -->
+              <label for="fitness-level">Fitness Level:</label>
+              <select
+                name="fitness_level"
+                class="select-input"
+                id="fitness-level-input"
+              >
+                <option value="level" default>Select Level</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="professional">Professional</option>
+              </select>
+              <span class="error-message"
+                >Please select your fitness level</span
+              >
+              <article class="form-btn-container">
+                <button type="reset" class="button-secondary button">
+                  Reset
+                </button>
+                <button type="submit" class="button-primary button">
+                  Join Now
+                </button>
+              </article>
+              <article class="help">Need Help?</article>
+            </article>
+          </form>
+        </article>
       </section>
     </main>
     <!-- Footer -->
