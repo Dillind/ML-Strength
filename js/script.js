@@ -23,8 +23,11 @@ fetch("components/footer.html")
     }
   });
 
+// Prevents the default functionality of the registration form submission and redirects to the home page.
 document.getElementById("registration-form").addEventListener("submit", (e) => {
+  // prevents default submission action
   e.preventDefault();
 
+  // redirects to the home page
   window.location.href = "/";
 });
