@@ -1,7 +1,8 @@
 # ML-Strength
-Assignment 3 for ICTWEB519 - Website
+Assignemnt for ICTWEB519, ICTWEB520 - Website Design Cluster.
 
-## Timelog
+## Wireframe
 
-### 24 September
-Started Assignment 3
+![Draft Wireframes](screenshots/wireframe.excalidraw.png)
+
+Copyright © Dylan Lindsay 2024
