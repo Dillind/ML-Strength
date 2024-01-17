@@ -4,27 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ML Strength - Clubs</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/prefixed-styling.css" />
   </head>
   <body>
     <!-- Header/nav -->
     <menu-container class="header-container"></menu-container>
     <main>
       <section class="club-section">
-        <h1 class="club-section-title">Find a gym near you!</h1>
+        <h1 class="section-title">Find a gym near you!</h1>
         <article class="club-banner">
-          <h3 class="club-banner-title">Welcome to ML Strength</h3>
+          <h2 class="club-banner-title">Welcome to ML Strength</h2>
         </article>
-        <article class="club-card-container">
-          <div class="club-card-wrapper">
-            <div class="club-card-content">
+        <article class="club-content-container">
+          <div class="club-content-wrapper">
+            <div class="club-content">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
-                asperiores?
+                ML Strength have five clubs located throughout Brisbane,
+                including Ashgrove, Brisbane City, Chermside, Graceville, and
+                Westlake. <br />
+              </p>
+              <p>
+                Come visit our clubs today and explore the facilities we have to
+                offer!
               </p>
             </div>
-            <div class="club-card-map">
-              <h4 class="club-card-map-title">View all stores</h4>
+            <div class="club-content-map">
+              <h3 class="club-content-map-title">View all clubs</h3>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d245349.21580788176!2d153.00254774796736!3d-27.478078451767693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1697962650064!5m2!1sen!2sau"
                 title="ML Strength Google Map Location"
@@ -38,64 +43,74 @@
           </div>
         </article>
         <article class="club-location-container">
+          <h3 class="club-location-title">ML Strength Clubs</h3>
           <article class="club-location-wrapper">
-            <h3>ML Strength Clubs</h3>
-            <!-- Location 1 -->
-            <div class="club-location-card-single" id="location-one">
-              <h4>Club 1</h4>
-              <div class="card-contact-information">
-                <p class="card-phone">Phone Number</p>
-                <p class="card-email">Send Email</p>
+            <!-- Location 1 - Ashgrove -->
+            <div class="club-location-card" id="location-one">
+              <h4 class="club-location-name">ML Strength Ashgrove</h4>
+              <div class="club-card-contact-information">
+                <p class="club-card-phone">0434678801</p>
+                <p class="club-card-email">Send Email</p>
               </div>
-              <h4>Club Location</h4>
+              <h4 class="club-location-address">
+                123 Main Street, Ashgrove, Brisbane, QLD 4000
+              </h4>
             </div>
-            <!-- Location 2 -->
-            <div class="club-location-card-single" id="location-two">
-              <h4>Club 2</h4>
-              <div class="card-contact-information">
-                <p class="card-phone">Phone Number</p>
-                <p class="card-email">Send Email</p>
+            <!-- Location 2 - Brisbane City -->
+            <div class="club-location-card" id="location-two">
+              <h4 class="club-location-name">ML Strength Brisbane City</h4>
+              <div class="club-card-contact-information">
+                <p class="club-card-phone">0434641801</p>
+                <p class="club-card-email">Send Email</p>
               </div>
-              <h4>Club Location</h4>
+              <h4 class="club-location-address">
+                456 Elm Avenue, Brisbane City, Brisbane, QLD 4001
+              </h4>
             </div>
-            <!-- Location 3 -->
-            <div class="club-location-card-single" id="location-three">
-              <h4>Club 3</h4>
-              <div class="card-contact-information">
-                <p class="card-phone">Phone Number</p>
-                <p class="card-email">Send Email</p>
+            <!-- Location 3 - Chermside -->
+            <div class="club-location-card" id="location-three">
+              <h4 class="club-location-name">ML Strength Chermside</h4>
+              <div class="club-card-contact-information">
+                <p class="club-card-phone">0434632833</p>
+                <p class="club-card-email">Send Email</p>
               </div>
-              <h4>Club Location</h4>
+              <h4 class="club-location-address">
+                789 Oak Street, Chermside, Brisbane, QLD 4002
+              </h4>
             </div>
-            <!-- Location 4 -->
-            <div class="club-location-card-single" id="location-four">
-              <h4>Club 4</h4>
-              <div class="card-contact-information">
-                <p class="card-phone">Phone Number</p>
-                <p class="card-email">Send Email</p>
+            <!-- Location 4 - Graceville-->
+            <div class="club-location-card" id="location-four">
+              <h4 class="club-location-name">ML Strength Graceville</h4>
+              <div class="club-card-contact-information">
+                <p class="club-card-phone">0439079101</p>
+                <p class="club-card-email">Send Email</p>
               </div>
-              <h4>Club Location</h4>
+              <h4 class="club-location-address">
+                101 Pine Road, Graceville, Brisbane, QLD 4003
+              </h4>
             </div>
-            <!-- Location 5 -->
-            <div class="club-location-card-single" id="location-five">
-              <h4>Club 5</h4>
-              <div class="card-contact-information">
-                <p class="card-phone">Phone Number</p>
-                <p class="card-email">Send Email</p>
+            <!-- Location 5 - Westlake -->
+            <div class="club-location-card" id="location-five">
+              <h4 class="club-location-name">ML Strength Westlake</h4>
+              <div class="club-card-contact-information">
+                <p class="club-card-phone">0438321201</p>
+                <p class="club-card-email">Send Email</p>
               </div>
-              <h4>Club Location</h4>
+              <h4 class="club-location-address">
+                202 Maple Drive, Westlake, Brisbane, QLD 4004
+              </h4>
             </div>
           </article>
         </article>
         <article class="btn-container">
+          <a href="/classes.html" class="button-secondary button" role="button"
+            >Book Class</a
+          >
           <a
             href="/registration.html"
             class="button-primary button"
             role="button"
             >Join Now</a
-          >
-          <a href="/classes.html" class="button-secondary button" role="button"
-            >Book Class</a
           >
         </article>
       </section>
