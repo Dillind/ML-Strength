@@ -4,78 +4,252 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ML Strength - Classes</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/prefixed-styling.css" />
   </head>
   <body>
     <!-- Header/nav -->
     <menu-container class="header-container"></menu-container>
     <main>
       <section class="classes-section">
-        <h1>Classes</h1>
-        <article>
-          <p>Introductory message about classes offered at ML Strength</p>
+        <h1 class="section-title">Classes</h1>
+        <article class="classes-banner"></article>
+        <article class="classes-description">
+          <p>
+            At ML Strength Gym, we offer a diverse array of classes tailored to
+            every fitness level and interest. Whether you thrive on high-energy
+            cardio, strength-focused workouts, prefer the serenity of mind-body
+            practices, love to dance, or seek low-impact options, our certified
+            instructors are here to guide you.
+          </p>
         </article>
         <article class="classes-card-container">
           <h2>Classes at ML Strength</h2>
           <div class="classes-card-wrapper">
+            <!-- Cardio Workouts -->
             <div class="classes-card">
-              <h4>Cardio Workouts</h4>
+              <h3>Cardio Workouts</h3>
               <div class="classes-card-content">
-                <!-- Cardio Workouts -->
-                <ul>
-                  <li>1</li>
-                  <li>1</li>
-                  <li>1</li>
-                </ul>
-                <!-- Strength & Conditioning -->
-                <ul>
-                  <li>1</li>
-                  <li>1</li>
-                  <li>1</li>
-                </ul>
-                <!-- Mind Body Connection-->
-                <ul>
-                  <li>1</li>
-                  <li>1</li>
-                  <li>1</li>
-                </ul>
-                <!-- Dance & Movement -->
-                <ul>
-                  <li>1</li>
-                  <li>1</li>
-                  <li>1</li>
-                </ul>
-                <!-- Low Impact & Gentle Fitness -->
-                <ul>
-                  <li>1</li>
-                  <li>1</li>
-                  <li>1</li>
-                </ul>
-                <!-- Aquatic Fitness -->
-                <ul>
-                  <li>1</li>
-                  <li>1</li>
-                  <li>1</li>
-                </ul>
+                <div class="classes-card-image">
+                  <img
+                    src="../img/cardio-workout.png"
+                    alt="Young female athlete training alone on treadmill in modern gym"
+                  />
+                </div>
+                <div class="classes-card-list">
+                  <h4>The following classes are available:</h4>
+                  <ul>
+                    <li>Body Attack</li>
+                    <li>Body Step</li>
+                    <li>RPM</li>
+                    <li>Cycle</li>
+                    <li>Cycle Extreme</li>
+                    <li>Cardio Blitz</li>
+                    <li>Cardio Circuit</li>
+                    <li>Hilo & Fat burner</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="classes-card-description">
+                <h4>Description:</h4>
+                <p>
+                  Dive into our heart-pumping cardio sessions, including Body
+                  Attack, RPM, and Cycling classes, designed to boost your
+                  endurance, burn calories, and elevate your energy levels.
+                </p>
+              </div>
+              <div class="btn-container">
+                <button type="button" class="button-primary button">
+                  Book Now
+                </button>
+              </div>
+            </div>
+            <!-- Strength & Conditioning -->
+            <div class="classes-card">
+              <h3>Strength & Conditioning</h3>
+              <div class="classes-card-content">
+                <div class="classes-card-image">
+                  <img
+                    src="../img/strength-and-conditioning.png"
+                    alt="Man In Black Tank Top Doing Push Ups"
+                  />
+                </div>
+                <div class="classes-card-list">
+                  <h4>The following classes are available:</h4>
+                  <ul>
+                    <li>Body Jump</li>
+                    <li>Body Combat</li>
+                    <li>Boxing & TAE Box</li>
+                    <li>Step Burner & Moves</li>
+                    <li>Sculpt & Combo</li>
+                    <li>Power Hour</li>
+                    <li>ABT (Abs, Butt, Thighs)</li>
+                    <li>Abs Blast</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="classes-card-description">
+                <h4>Description:</h4>
+                <p>
+                  Sculpt and define your body with our strength-focused classes
+                  like Body Combat and ABT, which are designed to transform your
+                  physique and are led by our certified trainers.
+                </p>
+              </div>
+              <div class="btn-container">
+                <button type="button" class="button-primary button">
+                  Book Now
+                </button>
+              </div>
+            </div>
+            <!-- Mind Body Connection-->
+            <div class="classes-card">
+              <h3>Mind Body Connection</h3>
+              <div class="classes-card-content">
+                <div class="classes-card-image">
+                  <img
+                    src="../img/mind-body-connection.png"
+                    alt="Group of Women Doing Work Out"
+                  />
+                </div>
+                <div class="classes-card-list">
+                  <h4>The following classes are available:</h4>
+                  <ul>
+                    <li>Body Balance</li>
+                    <li>Pilates</li>
+                    <li>Yoga</li>
+                    <li>Tai Chi</li>
+                    <li>Chi Ball</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="classes-card-description">
+                <h4>Description:</h4>
+                <p>
+                  Find your inner balance with our mind-body classes, such as
+                  Yoga, Pilates, Tai Chi, and Chi Ball. These classes are
+                  designed to enhance flexibility, improve posture, and foster a
+                  sense of calm and well-being.
+                </p>
+              </div>
+              <div class="btn-container">
+                <button type="button" class="button-primary button">
+                  Book Now
+                </button>
+              </div>
+            </div>
+            <!-- Dance & Movement -->
+            <div class="classes-card">
+              <h3>Dance & Movement</h3>
+              <div class="classes-card-content">
+                <div class="classes-card-image">
+                  <img src="../img/dance-movement.png" alt="cardio workout" />
+                </div>
+                <div class="classes-card-list">
+                  <h4>The following classes are available:</h4>
+                  <ul>
+                    <li>Zumba</li>
+                    <li>Body Jam</li>
+                    <li>Body Vive</li>
+                    <li>World Dance</li>
+                    <li>Dance</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="classes-card-description">
+                <h4>Description:</h4>
+                <p>
+                  Let loose in our vibrant dance classes, featuring Zumba and
+                  World Dance. Perfect for those who love to move to the beat,
+                  these sessions combine fitness and fun, ensuring you leave
+                  with a smile on your face.
+                </p>
+              </div>
+              <div class="btn-container">
+                <button type="button" class="button-primary button">
+                  Book Now
+                </button>
+              </div>
+            </div>
+            <!-- Low Impact & Gentle Fitness -->
+            <div class="classes-card">
+              <h3>Low Impact & Gentle Fitness</h3>
+              <div class="classes-card-content">
+                <div class="classes-card-image">
+                  <img
+                    src="../img/low-gentle-fitness.png"
+                    alt="Young sportswomen doing yoga with female trainer"
+                  />
+                </div>
+                <div class="classes-card-list">
+                  <h4>The following classes are available:</h4>
+                  <ul>
+                    <li>Rejuvenate</li>
+                    <li>Low Impact</li>
+                    <li>Gentle Fitness</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="classes-card-description">
+                <h4>Description:</h4>
+                <p>
+                  Our Low Impact and Gentle Fitness classes, including
+                  Rejuvenate and Gentle Fitness, provide a nurturing environment
+                  for those seeking effective workouts with minimal impact on
+                  joints.
+                </p>
+              </div>
+              <div class="btn-container">
+                <button type="button" class="button-primary button">
+                  Book Now
+                </button>
+              </div>
+            </div>
+            <!-- Aquatic Fitness -->
+            <div class="classes-card">
+              <h3>Aquatic Fitness</h3>
+              <div class="classes-card-content">
+                <div class="classes-card-image">
+                  <img
+                    src="../img/aquatic-fitness.png"
+                    alt="Three Swimmers Jumping Into Swimming Pool"
+                  />
+                </div>
+                <div class="classes-card-list">
+                  <h4>The following classes are available:</h4>
+                  <ul>
+                    <li>Aqua Fit</li>
+                    <li>Aqua Mode</li>
+                    <li>Water Polo</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="classes-card-description">
+                <h4>Description:</h4>
+                <p>
+                  Dive into our Aqua Fit & Aqua Mode classes, offering a
+                  refreshing twist to your workout routine. These water-based
+                  sessions provide a low-impact yet highly effective workout,
+                  making fitness enjoyable for everyone.
+                </p>
+              </div>
+              <div class="btn-container">
+                <button type="button" class="button-primary button">
+                  Book Now
+                </button>
               </div>
             </div>
           </div>
         </article>
-        <article class="classes-note">
+        <article class="classes-customer-note">
           <p>
             Note: Class availability may vary. Please check the timetable at
             each of our clubs for the most up-to-date information.
           </p>
         </article>
-        <article class="btn-container">
-          <button>Join Now</button>
-          <button>Book a Class</button>
-        </article>
       </section>
     </main>
     <!-- Footer -->
     <menu-container class="footer-container"></menu-container>
-
     <script src="js/script.js" defer></script>
   </body>
 </html>
